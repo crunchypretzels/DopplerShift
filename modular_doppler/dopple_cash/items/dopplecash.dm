@@ -59,7 +59,7 @@
 			H.dropItemToGround(bundle)
 			H.put_in_hands(src)
 			H.put_in_hands(bundle)
-		to_chat(user, "<span class='notice'>You add [value] libres worth of money to the bundle.<br>It now holds [bundle.value + value] libres.</span>")
+		to_chat(user, "<span class='notice'>You add [value] libre worth of money to the bundle.<br>It now holds [bundle.value + value] libre.</span>")
 		bundle.transfer_value(bundle.value, src)
 
 /obj/item/libre/Destroy()
@@ -106,19 +106,19 @@
 			drop_sound = 'modular_doppler/dopple_cash/sounds/coin_drop.ogg'
 			pickup_sound =  'modular_doppler/dopple_cash/sounds/coin_pickup.ogg'
 		else
-			name = "[value] libres"
+			name = "[value] libre"
 			desc = "The weight of the world by the palmful."
 			drop_sound = 'modular_doppler/dopple_cash/sounds/coin_drop.ogg'
 			pickup_sound =  'modular_doppler/dopple_cash/sounds/coin_pickup.ogg'
 	else
-		name = "[value] libres"
+		name = "[value] libre"
 		desc = "We saw a perfect void, a star-filled sky, and said, 'let's build a shopping mall there, two hundred stories high, and set it on fire, and make it loud enough to wake God'. And so we did."
 		drop_sound = 'modular_doppler/dopple_cash/sounds/dosh_drop.ogg'
 		pickup_sound =  'modular_doppler/dopple_cash/sounds/dosh_pickup.ogg'
 	return ..()
 
 /obj/item/libre/bundle/attack_self()
-	var/cashamount = input(usr, "How many libres do you want to take? (0 to [value])", "Take Money", 20) as num
+	var/cashamount = input(usr, "How many libre do you want to take? (0 to [value])", "Take Money", 20) as num
 	cashamount = round(clamp(cashamount, 0, value))
 	if(!cashamount)
 		return
@@ -133,7 +133,7 @@
 	update_appearance()
 
 /obj/item/libre/bundle/click_alt(mob/living/user)
-	var/cashamount = input(user, "How many libres do you want to take? (0 to [value])", "Take Money", 20) as num
+	var/cashamount = input(user, "How many libre do you want to take? (0 to [value])", "Take Money", 20) as num
 	cashamount = round(clamp(cashamount, 0, value))
 	if(!cashamount)
 		return
