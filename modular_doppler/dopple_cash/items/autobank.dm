@@ -99,7 +99,7 @@
 			if(dosh_taken <= balance)
 				synced_bank_account.adjust_money(-dosh_taken)
 				say("Withdrawal complete! Have a great day!")
-				spawn_libres(dosh_taken, drop_location())
+				spawn_libre(dosh_taken, drop_location())
 				playsound(src, 'sound/effects/cashregister.ogg', 50, TRUE)
 			else
 				say("Unable to complete transaction.")

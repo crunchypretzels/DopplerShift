@@ -150,7 +150,31 @@
 	var/obj/item/libre/bundle/bundle = new(user.loc, cashamount)
 	user.put_in_hands(bundle)
 
-/proc/spawn_libres(sum, spawnloc, mob/living/carbon/human/H) // not my brightest coding but that's what i have you guys for :) used for certain transactions
+/obj/item/libre/bundle/Initialize()
+	. = ..()
+	update_appearance()
+
+/obj/item/libre/bundle/c1/Initialize()
+	value = 1
+	. = ..()
+
+/obj/item/libre/bundle/tiny/Initialize() // THANKS, SHIPTEST!!
+	value = rand(10, 100)
+	. = ..()
+
+/obj/item/libre/bundle/small/Initialize()
+	value = rand(100, 500)
+	. = ..()
+
+/obj/item/libre/bundle/medium/Initialize()
+	value = rand(500, 3000)
+	. = ..()
+
+/obj/item/libre/bundle/large/Initialize()
+	value = rand(2500, 6000)
+	. = ..()
+
+/proc/spawn_libre(sum, spawnloc, mob/living/carbon/human/H) // not my brightest coding but that's what i have you guys for :) used for certain transactions
 	var/obj/item/libre/bundle/fundle = new (spawnloc)
 	fundle.value = sum
 	fundle.update_icon()
