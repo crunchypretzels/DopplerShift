@@ -1,3 +1,16 @@
+/datum/element/debris
+	element_flags = ELEMENT_BESPOKE
+	argument_hash_start_idx = 2
+
+	///Icon state of debris when impacted by a projectile
+	var/debris = null
+	///Velocity of debris particles
+	var/debris_velocity = -15
+	///Amount of debris particles
+	var/debris_amount = 8
+	///Scale of particle debris
+	var/debris_scale = 0.7
+
 /datum/element/debris/Attach(datum/target, _debris_icon_state, _debris_velocity = -15, _debris_amount = 8, _debris_scale = 0.7)
 	. = ..()
 	debris = _debris_icon_state
