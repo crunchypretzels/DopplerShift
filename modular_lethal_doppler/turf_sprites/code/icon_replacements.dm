@@ -6,4 +6,3 @@
 
 /turf/closed/indestructible/riveted
 	icon = 'icons/icon_cutter_deez/walls/riveted.dmi'
-
