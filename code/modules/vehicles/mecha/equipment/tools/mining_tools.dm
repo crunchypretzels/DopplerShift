@@ -185,7 +185,7 @@
 	target.apply_damage(10, BRUTE, def_zone, blocked)
 
 	//blood splatters
-	var/splatter_dir = angle_raw(chassis, target) // DOPPLETHAL EDIT - ORIGINAL - var/splatter_dir = get_dir(chassis, target)
+	var/splatter_dir = get_angle(chassis, target) // DOPPLETHAL EDIT - ORIGINAL - var/splatter_dir = get_dir(chassis, target)
 	if(isalien(target))
 		new /obj/effect/temp_visual/dir_setting/bloodsplatter/xenosplatter(target.drop_location(), splatter_dir)
 	else
