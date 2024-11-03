@@ -207,7 +207,7 @@
 		shake_camera(user, recoil + 1, recoil)
 	fire_sounds()
 
-	var/firing_angle = get_angle_raw(user, pbtarget) // DOPPLETHAL ADDITION
+	var/firing_angle = get_angle(user, pbtarget) // DOPPLETHAL ADDITION
 	muzzle_flash(firing_angle, user) // DOPPLETHAL ADDITION
 
 	if(suppressed || !message)
