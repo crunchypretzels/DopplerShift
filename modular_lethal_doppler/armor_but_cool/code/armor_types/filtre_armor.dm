@@ -31,7 +31,7 @@
 /obj/item/flashlight/seclite/green
 	name = "filtre helmet light"
 	desc = "The inbuilt light of a filtre's helmet, it's green because it looks cool."
-	light_color = "#99ccff"
+	light_color = "#77bd5d"
 
 /obj/item/clothing/suit/armor/lethal_filtre
 	name = "'Firuta' type III high mobility armor kit"
