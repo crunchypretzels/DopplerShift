@@ -115,7 +115,6 @@
 	max_integrity = 800
 	limb_integrity = 800
 	dog_fashion = null
-	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/helmet/lethal_filtre_helmet/worn_overlays(mutable_appearance/standing, isinhands, icon_file)

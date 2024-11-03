@@ -22,6 +22,6 @@
 		made version of the armor for close range operations with relatively light armor requirements. \
 		In many places, you won't need invincible armor to successful police work, just armor that will \
 		stop weaker-energy ammunition over as many of the parts of your body as possible. Frontier police \
-		doing as frontier police will do, of course, as resulted in this set being tacticool black."
+		doing as frontier police will do, of course, has resulted in this set being tacticool black."
 
 	return .

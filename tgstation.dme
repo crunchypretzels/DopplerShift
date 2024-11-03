@@ -442,7 +442,6 @@
 #include "code\__DEFINES\~doppler_defines\traits.dm"
 #include "code\__DEFINES\~doppler_defines\vv.dm"
 #include "code\__DEFINES\~doppler_defines\wounds.dm"
-#include "code\__DEFINES\~doppler_defines\lethaldoppler_defines\armor_defines.dm"
 #include "code\__DEFINES\~doppler_defines\lethaldoppler_defines\particles.dm"
 #include "code\__DEFINES\~doppler_defines\lethaldoppler_defines\projectiles_lethalstation.dm"
 #include "code\__HELPERS\_auxtools_api.dm"

@@ -51,7 +51,6 @@
 	armor_type = /datum/armor/armor_sf_peacekeeper
 	dog_fashion = null
 	flags_inv = null
-	supports_variations_flags = CLOTHING_SNOUTED_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/head/helmet/sf_peacekeeper/examine_more(mob/user)
