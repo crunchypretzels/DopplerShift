@@ -54,7 +54,7 @@
 /obj/item/clothing/suit/armor/lethal_filtre/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/seclite_attachable, \
-		starting_light = new /obj/item/flashlight/seclite(src), \
+		starting_light = new /obj/item/flashlight/seclite/green(src), \
 		is_light_removable = FALSE, \
 		light_icon_state = null, \
 		light_overlay_icon = null, \

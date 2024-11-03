@@ -8,6 +8,11 @@
 	acid = ARMOR_LEVEL_MID
 	wound = WOUND_ARMOR_HIGH
 
+/obj/item/flashlight/seclite/pinata
+	name = "integrated headset light"
+	desc = "The lights built into the many sensing arrays of implanted headsets."
+	light_color = "#d43e41"
+
 /obj/item/clothing/head/helmet/lethal_pinata_helmet
 	name = "'Banda-Completa' neural interface"
 	desc = "A high-tech neural interface that is implanted directly to the user's head. \
@@ -35,6 +40,13 @@
 /obj/item/clothing/head/helmet/lethal_pinata_helmet/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(ITEM_SLOT_HEAD))
+	AddComponent(/datum/component/seclite_attachable, \
+		starting_light = new /obj/item/flashlight/seclite/pinata(src), \
+		is_light_removable = FALSE, \
+		light_icon_state = null, \
+		light_overlay_icon = null, \
+		light_overlay = null, \
+		)
 	ADD_TRAIT(src, TRAIT_NODROP, CLOTHING_TRAIT)
 
 /obj/item/clothing/head/helmet/lethal_pinata_helmet/equipped(mob/living/carbon/human/user, slot)
