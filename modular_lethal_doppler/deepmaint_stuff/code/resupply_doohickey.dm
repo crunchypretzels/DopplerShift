@@ -104,6 +104,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/vending/wallmed/epic_loot, 32)
 			"products" = list(
 				/obj/item/clothing/head/soft/black = INFINITY,
 				/obj/item/clothing/head/standalone_hood = INFINITY,
+				/obj/item/clothing/mask/neck_gaiter = INFINITY,
 				/obj/item/clothing/mask/bandana/black = INFINITY,
 				/obj/item/clothing/mask/gas/sechailer = INFINITY,
 				/obj/item/clothing/mask/gas/atmos/frontier_colonist = INFINITY,

@@ -111,6 +111,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/vending/wallmed/epic_loot/evil, 32)
 				/obj/item/clothing/suit/armor/lethal_filtre/super_light = INFINITY,
 				/obj/item/clothing/suit/armor/lethal_filtre = INFINITY,
 				/obj/item/clothing/suit/armor/lethal_filtre/heavy = INFINITY,
+				/obj/item/clothing/mask/neck_gaiter = INFINITY,
 				/obj/item/clothing/mask/gas/sechailer = INFINITY,
 				/obj/item/clothing/mask/gas/atmos/frontier_colonist = INFINITY,
 				/obj/item/clothing/gloves/frontier_colonist = INFINITY,
