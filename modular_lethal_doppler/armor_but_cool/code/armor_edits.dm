@@ -9,34 +9,27 @@
 // They only take at most 12 damage a hit
 
 /obj/item/clothing/suit/armor/sf_peacekeeper
-	max_integrity = 250
-	limb_integrity = 250
+
 
 /obj/item/clothing/head/helmet/sf_peacekeeper
-	max_integrity = 250
-	limb_integrity = 250
+
 
 // Hardened armor
 // These have less integrity because they nullify armor penetration before being hit
 
 /obj/item/clothing/suit/armor/sf_hardened
-	max_integrity = 200
-	limb_integrity = 200
+
 
 /obj/item/clothing/head/helmet/toggleable/sf_hardened
-	max_integrity = 200
-	limb_integrity = 200
+
 
 // Sacrificial armor, which needs a lot of health because of its high damage reduction
 
 /obj/item/clothing/suit/armor/sf_sacrificial
-	max_integrity = 400
-	limb_integrity = 400
-	slowdown = 0.25
+
 
 /obj/item/clothing/head/helmet/sf_sacrificial
-	max_integrity = 400
-	limb_integrity = 400
+
 
 // Frontier soft armor
 // These have like security level armor, but the like 5 damage reduction might save you idk

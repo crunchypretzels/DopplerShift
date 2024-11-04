@@ -10,7 +10,7 @@
 	wound = WOUND_ARMOR_WEAK
 
 /obj/item/clothing/suit/armor/sf_hardened
-	name = "'Muur' hardened armor vest"
+	name = "'Muur' type II hardened vest"
 	desc = "A large white breastplate, and a semi-flexible mail of dense panels that cover the torso. \
 		While not so incredible at directly stopping bullets, the vest is uniquely suited to cause bullets \
 		to lose much of their armor penetrating energy before any damage can be done."
@@ -22,6 +22,8 @@
 	armor_type = /datum/armor/armor_sf_hardened
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
+	max_integrity = 200
+	limb_integrity = 200
 
 /obj/item/clothing/suit/armor/sf_hardened/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text, final_block_chance, damage, attack_type, damage_type)
 	. = ..()
@@ -46,14 +48,14 @@
 	return .
 
 /obj/item/clothing/suit/armor/sf_hardened/emt
-	name = "'Archangel' hardened armor vest"
+	name = "'Archangel' type II hardened vest"
 	desc = "A large white breastplate with a lone red stripe, and a semi-flexible mail of dense panels that cover the torso. \
 		While not so incredible at directly stopping bullets, the vest is uniquely suited to cause bullets \
 		to lose much of their armor penetrating energy before any damage can be done."
 	icon_state = "hardened_emt"
 
 /obj/item/clothing/head/helmet/toggleable/sf_hardened
-	name = "'Muur' enclosed helmet"
+	name = "'Muur' type II enclosed helmet"
 	desc = "A thick-fronted helmet with extendable visor for whole face protection. The materials and geometry of the helmet \
 		combine in such a way that bullets lose much of their armor penetrating energy before any damage can be done, rather than penetrate into it."
 	icon = 'modular_lethal_doppler/armor_but_cool/icons/armor.dmi'
@@ -69,6 +71,8 @@
 	visor_flags_cover = HEADCOVERSEYES
 	dog_fashion = null
 	resistance_flags = FIRE_PROOF
+	max_integrity = 200
+	limb_integrity = 200
 
 /obj/item/clothing/head/helmet/toggleable/sf_hardened/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text, final_block_chance, damage, attack_type, damage_type)
 	. = ..()
@@ -93,7 +97,7 @@
 	return .
 
 /obj/item/clothing/head/helmet/toggleable/sf_hardened/emt
-	name = "'Archangel' enclosed helmet"
+	name = "'Archangel' type II enclosed helmet"
 	desc = "A thick-fronted helmet with extendable visor for whole face protection. The materials and geometry of the helmet \
 		combine in such a way that bullets lose much of their armor penetrating energy before any damage can be done, rather than penetrate into it. \
 		This one has a red stripe down the front."

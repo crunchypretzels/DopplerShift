@@ -21,11 +21,12 @@
 	inhand_icon_state = "armor"
 	blood_overlay_type = "armor"
 	armor_type = /datum/armor/armor_sf_sacrificial
-	max_integrity = 200
-	limb_integrity = 200
 	repairable_by = null // No being cheeky and keeping a pile of repair materials in your bag to fix it either
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 	resistance_flags = FIRE_PROOF
+	max_integrity = 400
+	limb_integrity = 400
+	slowdown = 0.25
 
 /obj/item/clothing/suit/armor/sf_sacrificial/examine_more(mob/user)
 	. = ..()
@@ -39,7 +40,7 @@
 	return .
 
 /obj/item/clothing/head/helmet/sf_sacrificial
-	name = "'Val' sacrificial ballistic helmet"
+	name = "'Val' type IV ballistic helmet"
 	desc = "A large, almost always ill-fitting helmet painted in a tacticool black. \
 		Specially built to protect the wearer from heavy fire in exchange for shattering \
 		quickly under sustained use. While inconvenient for some, not being a corpse is \
@@ -57,6 +58,8 @@
 	resistance_flags = FIRE_PROOF
 	/// Holds the faceshield for quick reference
 	var/obj/item/sacrificial_face_shield/face_shield
+	max_integrity = 400
+	limb_integrity = 400
 
 /obj/item/clothing/head/helmet/sf_sacrificial/attackby(obj/item/attacking_item, mob/user, params)
 	. = ..()
