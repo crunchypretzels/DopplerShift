@@ -202,6 +202,16 @@
 		return
 	return ..()
 
+/datum/mood_event/startled
+	description = "Hearing that word made me think about something scary."
+	mood_change = -1
+	timeout = 1 MINUTES
+
+/datum/mood_event/phobia
+	description = "I saw something very frightening."
+	mood_change = -4
+	timeout = 4 MINUTES
+
 /datum/mood_event/spooked
 	description = "The rattling of those bones... It still haunts me."
 	mood_change = -4
@@ -501,3 +511,8 @@
 	// Felinids apparently hate being hit over the head with cardboard
 	if(isfelinid(owner))
 		mood_change = -2
+
+/datum/mood_event/encountered_evil
+	description = "I didn't want to believe it, but there are people out there that are genuinely evil."
+	mood_change = -4
+	timeout = 1 MINUTES

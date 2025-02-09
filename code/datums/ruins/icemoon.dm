@@ -61,6 +61,12 @@
 	description = "Moffuchi's Family Pizzeria chain has a reputation for providing affordable artisanal meals of questionable edibility. This particular pizzeria seems to have been abandoned for some time."
 	suffix = "icemoon_surface_pizza.dmm"
 
+/datum/map_template/ruin/icemoon/Lodge
+	name = "Ice-Ruin Hunters Lodge"
+	id = "lodge"
+	description = "An old hunting lodge. I wonder if anyone is still home?"
+	suffix = "icemoon_surface_lodge.dmm"
+
 /datum/map_template/ruin/icemoon/frozen_phonebooth
 	name = "Ice-Ruin Frozen Phonebooth"
 	id = "frozen_phonebooth"
@@ -160,6 +166,12 @@
 	description = "This is where all of your paychecks went. Signed, the management."
 	suffix = "icemoon_underground_mailroom.dmm"
 
+/datum/map_template/ruin/icemoon/underground/biodome
+	name = "Ice-Ruin Syndicate Bio-Dome"
+	id = "biodome"
+	description = "Unchecked experimention gone awry."
+	suffix = "icemoon_underground_syndidome.dmm"
+
 /datum/map_template/ruin/icemoon/underground/frozen_comms
 	name = "Ice-Ruin Frozen Communicatons Outpost"
 	id = "frozen_comms"
@@ -177,6 +189,12 @@
 	id = "syndie_lab"
 	description = "A small laboratory and living space for Syndicate agents."
 	suffix = "icemoon_underground_syndielab.dmm"
+
+/datum/map_template/ruin/icemoon/underground/o31
+	name = "Ice-Ruin Outpost 31"
+	id = "o31"
+	description = "Suspiciously dead silent. May or may not contain megafauna"
+	suffix = "icemoon_underground_outpost31.dmm"
 
 //TODO: Bottom-Level ONLY Spawns after Refactoring Related Code
 /datum/map_template/ruin/icemoon/underground/plasma_facility

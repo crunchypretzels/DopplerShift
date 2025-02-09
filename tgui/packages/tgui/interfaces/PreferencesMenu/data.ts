@@ -1,4 +1,4 @@
-import { BooleanLike } from 'common/react';
+import { BooleanLike } from 'tgui-core/react';
 
 import { sendAct } from '../../backend';
 import { LoadoutCategory, LoadoutList } from './loadout/base';
@@ -78,6 +78,8 @@ export type Department = {
 export type Job = {
   description: string;
   department: string;
+  // DOPPLER EDIT
+  alt_titles?: string[];
 };
 
 export type Quirk = {
@@ -153,6 +155,7 @@ export type PreferencesMenuData = {
     doppler_lore: Record<string, unknown> /* DOPPLER EDIT ADDITION */;
     secondary_features: Record<string, unknown>;
     supplemental_features: Record<string, unknown>;
+    markings: Record<string, unknown> /* DOPPLER EDIT ADDITION */;
     manually_rendered_features: Record<string, string>;
 
     names: Record<string, string>;
@@ -182,6 +185,7 @@ export type PreferencesMenuData = {
   job_preferences: Record<string, JobPriority>;
 
   // DOPPLER EDIT
+  job_alt_titles: Record<string, string>;
   selected_languages: Language[];
   unselected_languages: Language[];
   total_language_points: number;

@@ -23,6 +23,10 @@
 	else
 		outfit.shoes = item_path
 
+/datum/loadout_item/shoes/medical
+	name = "Medical Shoes"
+	item_path = /obj/item/clothing/shoes/medical
+
 /datum/loadout_item/shoes/sneakers
 	name = "Sneakers"
 	item_path = /obj/item/clothing/shoes/sneakers
@@ -34,6 +38,10 @@
 /datum/loadout_item/shoes/jackboots
 	name = "Jackboots"
 	item_path = /obj/item/clothing/shoes/jackboots
+
+/datum/loadout_item/shoes/jackboots/greyscale
+	name = "Custom Jackboots"
+	item_path = /obj/item/clothing/shoes/jackboots/recolorable
 
 /datum/loadout_item/shoes/workboots
 	name = "Work Boots"
@@ -67,10 +75,6 @@
 	name = "Jester Shoes"
 	item_path = /obj/item/clothing/shoes/jester_shoes
 
-/datum/loadout_item/shoes/ducky_shoes
-	name = "Ducky Shoes"
-	item_path = /obj/item/clothing/shoes/ducky_shoes
-
 /datum/loadout_item/shoes/wheelys
 	name = "Wheelys"
 	item_path = /obj/item/clothing/shoes/wheelys
@@ -83,10 +87,6 @@
 	name = "Lizard Cowboy Boots"
 	item_path = /obj/item/clothing/shoes/cowboy/lizard
 
-/datum/loadout_item/shoes/russian
-	name = "Russian Boots"
-	item_path = /obj/item/clothing/shoes/russian
-
 /datum/loadout_item/shoes/pirate
 	name = "Pirate Boots"
 	item_path = /obj/item/clothing/shoes/pirate
@@ -95,6 +95,50 @@
 	name = "Colonial Half-boots"
 	item_path = /obj/item/clothing/shoes/jackboots/colonial
 
+/datum/loadout_item/shoes/colonial_boots/greyscale
+	name = "Custom Colonial Half-boots"
+	item_path = /obj/item/clothing/shoes/jackboots/colonial/greyscale
+
 /datum/loadout_item/shoes/frontier_boots
 	name = "Heavy Boots"
 	item_path = /obj/item/clothing/shoes/jackboots/frontier_colonist
+
+/datum/loadout_item/shoes/greyscale_laceups
+	name = "Custom Laceups"
+	item_path = /obj/item/clothing/shoes/colorable_laceups
+
+/datum/loadout_item/shoes/greyscale_sandals
+	name = "Custom Sandals"
+	item_path = /obj/item/clothing/shoes/colorable_sandals
+
+/datum/loadout_item/shoes/wraps
+	name = "Cloth Footwraps"
+	item_path = /obj/item/clothing/shoes/wraps
+
+/datum/loadout_item/shoes/wraps/leggy
+	name = "Cloth Legwraps"
+	item_path = /obj/item/clothing/shoes/wraps/leggy
+
+/datum/loadout_item/shoes/wraps/aerostatic
+	name = "Aerostatic Boots"
+	item_path = /obj/item/clothing/shoes/kim
+
+/datum/loadout_item/shoes/wraps/disco
+	name = "Green Lizardskin Shoes"
+	item_path = /obj/item/clothing/shoes/discoshoes
+
+/datum/loadout_item/shoes/wraps/glow_shoes
+	name = "Glow Shoes"
+	item_path = /obj/item/clothing/shoes/glow
+
+/datum/loadout_item/shoes/wraps/swag
+	name = "Drip Shoes"
+	item_path = /obj/item/clothing/shoes/swagshoes
+
+/datum/loadout_item/shoes/wraps/skates
+	name = "Roller Skates"
+	item_path = /obj/item/clothing/shoes/wheelys/rollerskates
+
+/datum/loadout_item/shoes/rollerblades
+	name = "Inline Skates"
+	item_path = /obj/item/clothing/shoes/rollerblades

@@ -22,8 +22,8 @@
 
 /mob/dead/new_player/Initialize(mapload)
 	if(client && SSticker.state == GAME_STATE_STARTUP)
-		var/atom/movable/screen/splash/S = new(null, client, TRUE, TRUE)
-		S.Fade(TRUE)
+		var/atom/movable/screen/splash/fade_out = new(null, null, client, TRUE)
+		fade_out.Fade(TRUE)
 
 	if(length(GLOB.newplayer_start))
 		forceMove(pick(GLOB.newplayer_start))
@@ -216,10 +216,11 @@
 		humanc = character //Let's retypecast the var to be human,
 
 	if(humanc) //These procs all expect humans
+		var/chosen_rank = humanc.client?.prefs.alt_job_titles?[rank] || rank // DOPPLER EDIT ADDITION - ALTERNATIVE_JOB_TITLES
 		if(SSshuttle.arrivals)
-			SSshuttle.arrivals.QueueAnnounce(humanc, rank)
+			SSshuttle.arrivals.QueueAnnounce(humanc, chosen_rank) // DOPPLER EDIT: rank -> chosen_rank
 		else
-			announce_arrival(humanc, rank)
+			announce_arrival(humanc, chosen_rank) // DOPPLER EDIT: rank -> chosen_rank
 		AddEmploymentContract(humanc)
 
 		humanc.increment_scar_slot()
