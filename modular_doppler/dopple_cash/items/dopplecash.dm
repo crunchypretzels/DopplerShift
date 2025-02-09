@@ -154,8 +154,42 @@
 	. = ..()
 	update_appearance()
 
+// premade bundles for spawning
+
 /obj/item/libre/bundle/c1/Initialize()
 	value = 1
+	. = ..()
+
+/obj/item/libre/bundle/c5/Initialize()
+	value = 5
+	. = ..()
+
+/obj/item/libre/bundle/c10/Initialize()
+	value = 10
+	. = ..()
+
+/obj/item/libre/bundle/c20/Initialize()
+	value = 20
+	. = ..()
+
+/obj/item/libre/bundle/c50/Initialize()
+	value = 50
+	. = ..()
+
+/obj/item/libre/bundle/c100/Initialize()
+	value = 100
+	. = ..()
+
+/obj/item/libre/bundle/c200/Initialize()
+	value = 200
+	. = ..()
+
+/obj/item/libre/bundle/c500/Initialize()
+	value = 500
+	. = ..()
+
+/obj/item/libre/bundle/c1000/Initialize()
+	value = 1000
 	. = ..()
 
 /obj/item/libre/bundle/tiny/Initialize() // THANKS, SHIPTEST!!
@@ -177,77 +211,5 @@
 /proc/spawn_libre(sum, spawnloc, mob/living/carbon/human/H) // not my brightest coding but that's what i have you guys for :) used for certain transactions
 	var/obj/item/libre/bundle/fundle = new (spawnloc)
 	fundle.value = sum
-	fundle.update_icon()
+	fundle.update_appearance()
 	usr.put_in_hands(fundle)
-
-// ORIONS
-// Want to see something REALLY scary?
-
-/obj/item/orion
-	name = "zero orion stick"
-	desc = "A drive for carrying your Ori around. Fabricated by a 4CA Collective Currency and Logistical Local, or 'COLLECTCALL'."
-	icon = 'modular_doppler/dopple_cash/icons/money_orion.dmi'
-	icon_state = "orion0"
-	w_class = WEIGHT_CLASS_TINY
-	var/value = 0
-	var/stick_value = 0
-
-/obj/item/orion/examine(mob/user)
-	. = ..()
-	. += span_notice("There's [value] Orion on the stick.")
-
-/obj/item/orion/attackby(obj/item/attacking_item, mob/user, params)
-	if(!isidcard(attacking_item))
-		return ..()
-	if(value == stick_value)
-		to_chat(user, span_notice("This stick is full."))
-		return ..()
-	var/obj/item/card/id/attacking_id = attacking_item
-	balloon_alert(user, "starting transfer")
-	var/stickamount = input(user, "How much do you want to transfer? ID Balance: [attacking_id.registered_account.account_balance], Stick Maximum Balance: [stick_value]") as num
-	stickamount = round(clamp(stickamount, 0, stick_value))
-	if(!stickamount)
-		return
-	while(stickamount >= 1 && stickamount <= attacking_id.registered_account.account_balance)
-		if(stickamount <= stick_value)
-			attacking_id.registered_account.account_balance -= stickamount
-			value += stickamount
-			to_chat(user, span_notice("You transfer [stickamount] Orion from [attacking_id] to [src], finalizing the stick."))
-		else
-			to_chat(user, span_notice("YOU FUCKED UP JUNIE!!!"))
-			return
-
-/obj/item/orion/c5
-	name = "5 ori stick"
-	icon_state = "orion5"
-	stick_value = 5
-
-/obj/item/orion/c10
-	name = "10 ori stick"
-	icon_state = "orion10"
-	stick_value = 10
-
-/obj/item/orion/c20
-	name = "20 ori stick"
-	icon_state = "orion20"
-	stick_value = 20
-
-/obj/item/orion/c50
-	name = "50 ori stick"
-	icon_state = "orion50"
-	stick_value = 50
-
-/obj/item/orion/c100
-	name = "100 ori stick"
-	icon_state = "orion100"
-	stick_value = 100
-
-/obj/item/orion/c500
-	name = "500 ori stick"
-	icon_state = "orion500"
-	stick_value = 500
-
-/obj/item/orion/c1000
-	name = "1000 ori stick"
-	icon_state = "orion1000"
-	stick_value = 1000

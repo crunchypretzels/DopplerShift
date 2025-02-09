@@ -30,7 +30,7 @@
 /obj/machinery/autobank/examine_more(mob/user)
 	. = ..()
 
-	. += span_notice("You could turn <b>coins</b>, vending machine <b>holochips</b>, and <b>space cash</b> into standardized credits.")
+	. += span_notice("Most <b>outdated or non-standard galactic currencies</b> can be converted into <b>Ori</b> or <b>Libre</b> by inserting them into the machine.")
 
 /obj/machinery/autobank/attackby(obj/item/weapon, mob/user, params)
 	var/value = 0
@@ -53,7 +53,7 @@
 	if(value)
 		if(synced_bank_account)
 			synced_bank_account.adjust_money(value)
-			say("Credits deposited! Your account now holds [synced_bank_account.account_balance] credits.")
+			say("Libre deposited! Your account now holds [synced_bank_account.account_balance] libre.")
 			playsound(src, 'sound/effects/cashregister.ogg', 50, TRUE)
 			qdel(weapon)
 		else
@@ -71,7 +71,6 @@
 	var/list/data = list()
 	data["current_balance"] = synced_bank_account?.account_balance
 	data["withdrawal_amount"] = 0
-
 
 	return data
 
@@ -98,7 +97,7 @@
 			var/dosh_taken = text2num(params["totalcreds"])
 			if(dosh_taken <= balance)
 				synced_bank_account.adjust_money(-dosh_taken)
-				say("Withdrawal complete! Have a great day!")
+				say("Libre withdrawal complete! Have a great day!")
 				spawn_libre(dosh_taken, drop_location())
 				playsound(src, 'sound/effects/cashregister.ogg', 50, TRUE)
 			else
@@ -147,7 +146,7 @@
 		inserted_scan_id = null
 		return TRUE
 
-//colony fab version
+//colony fab
 /obj/item/flatpacked_machine/atm
 	name = "banking terminal parts kit"
 	icon = 'modular_doppler/dopple_cash/icons/atm.dmi'
@@ -157,4 +156,48 @@
 	custom_materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 5,
+	)
+
+// wall-mounted version for mapping
+
+/obj/machinery/autobank/wallmount
+	name = "autobank terminal"
+	icon = 'modular_doppler/dopple_cash/icons/atm.dmi'
+	icon_state = "atm_wall"
+	circuit = null
+	anchored = TRUE
+	density = FALSE
+	var/repacked_type = /obj/item/wallframe/frontier_medstation
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/autobank/wallmount, 29)
+
+/obj/machinery/autobank/wallmount/default_unfasten_wrench(mob/user, obj/item/wrench/tool, time)
+	user.balloon_alert(user, "deconstructing...")
+	tool.play_tool_sound(src)
+	if(tool.use_tool(src, user, 1 SECONDS))
+		playsound(loc, 'sound/items/deconstruct.ogg', 50, TRUE)
+		deconstruct(TRUE)
+		return
+
+/obj/machinery/autobank/wallmount/on_deconstruction(disassembled)
+	if(disassembled)
+		new repacked_type(drop_location())
+
+/obj/machinery/autobank/wallmount/default_deconstruction_crowbar()
+	return
+
+// Deployable version; engineering or service design?
+
+/obj/item/wallframe/atm_wallmount
+	name = "unmounted atm wall-mount"
+	desc = "Turn any home into a bodega with this portable ATM!"
+	icon = 'modular_doppler/dopple_cash/icons/atm.dmi'
+	icon_state = "atm_wall_off"
+	w_class = WEIGHT_CLASS_NORMAL
+	result_path = /obj/machinery/autobank/wallmount
+	pixel_shift = 29
+	custom_materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/silver = SHEET_MATERIAL_AMOUNT ,
+		/datum/material/gold = SHEET_MATERIAL_AMOUNT * 3,
 	)
