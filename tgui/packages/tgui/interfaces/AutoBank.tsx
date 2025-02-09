@@ -5,8 +5,8 @@ import {
   NoticeBox,
   NumberInput,
   Section,
-} from '../components';
-import { formatMoney } from '../format';
+} from 'tgui-core/components';
+import { formatMoney } from 'tgui-core/format';
 import { Window } from '../layouts';
 
 type Data = {
@@ -22,7 +22,7 @@ export const AutoBank = (props) => {
   return (
     <Window width={350} height={155}>
       <Window.Content>
-        <NoticeBox danger>997473629173892347294324723. . .</NoticeBox>
+        <NoticeBox danger>CONNECTING. . .</NoticeBox>
         <Section title={'Port Authority Currency Terminal'}>
           <LabeledList>
             <LabeledList.Item
@@ -45,7 +45,7 @@ export const AutoBank = (props) => {
                 value={current_balance}
                 format={(value) => formatMoney(value)}
               />
-              {' cr'}
+              {' ♎︎'}
             </LabeledList.Item>
           </LabeledList>
         </Section>

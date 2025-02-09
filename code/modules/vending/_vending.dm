@@ -560,11 +560,11 @@ GLOBAL_LIST_EMPTY(vending_machines_to_restock)
 		to_chat(user, span_warning("There's nothing to restock!"))
 		return
 
-	to_chat(user, span_notice("You loaded [restocked] items in [src][credits_contained > 0 ? ", and are rewarded [credits_contained] credits." : "."]"))
+	to_chat(user, span_notice("You loaded [restocked] items in [src][credits_contained > 0 ? ", and are rewarded [credits_contained] libre." : "."]")) // DOPPLER EDIT BEGIN: cashtype
 	var/datum/bank_account/cargo_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	cargo_account.adjust_money(round(credits_contained * 0.5), "Vending: Restock")
-	var/obj/item/holochip/payday = new(src, credits_contained)
-	try_put_in_hand(payday, user)
+	spawn_libre(src, credits_contained) // DOPPLER EDIT END
+//	try_put_in_hand(payday, user)
 	credits_contained = 0
 
 /**
@@ -1666,10 +1666,10 @@ GLOBAL_LIST_EMPTY(vending_machines_to_restock)
 	if(credits_contained <= 0)
 		return
 	var/credits_to_remove = min(CREDITS_DUMP_THRESHOLD, round(credits_contained))
-	var/obj/item/holochip/holochip = new(loc, credits_to_remove)
+	spawn_libre(loc, credits_to_remove) // DOPPLER EDIT: cashtype
 	playsound(src, 'sound/effects/cashregister.ogg', 40, TRUE)
 	credits_contained = max(0, credits_contained - credits_to_remove)
-	SSblackbox.record_feedback("amount", "vending machine looted", holochip.credits)
+	SSblackbox.record_feedback("amount", "vending machine looted", credits_to_remove)
 
 /obj/machinery/vending/add_context(atom/source, list/context, obj/item/held_item, mob/user)
 	if(tilted && !held_item)

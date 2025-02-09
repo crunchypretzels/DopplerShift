@@ -42,9 +42,9 @@
 	purchase_path = /obj/item/storage/box/minertracker
 	cost_per_order = 600
 
-/datum/orderable_item/consumables/space_cash
-	purchase_path = /obj/item/stack/spacecash/c1000
-	desc = "A stack of space cash worth 1000 credits."
+/datum/orderable_item/consumables/space_cash // DOPPLER EDIT: money type
+	purchase_path = /obj/item/libre/bundle/c1000
+	desc = "A freshly-translocated 1000 libre bill."
 	cost_per_order = 2000
 
 /datum/orderable_item/consumables/rescue_hook

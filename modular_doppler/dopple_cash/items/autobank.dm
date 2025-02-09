@@ -3,7 +3,7 @@
 
 /obj/machinery/autobank
 	name = "banking terminal"
-	desc = "An automatic teller machine, or ATM, connected to the Port Authority Neglible-Loss Transaction Yard, or PANTRY. Capable of dispensing the two most commonly-utilized currencies on the local market; Ori and Libres."
+	desc = "An automatic teller machine, or ATM, connected to the Port Authority Neglible-Loss Transaction Yard, or PANTRY. Capable of dispensing physical currency."
 	icon = 'modular_doppler/dopple_cash/icons/atm.dmi'
 	icon_state = "atm"
 	anchored = TRUE
@@ -30,7 +30,7 @@
 /obj/machinery/autobank/examine_more(mob/user)
 	. = ..()
 
-	. += span_notice("Most <b>outdated or non-standard galactic currencies</b> can be converted into <b>Ori</b> or <b>Libre</b> by inserting them into the machine.")
+	. += span_notice("Most <b>outdated or non-standard galactic currencies</b> can be converted into <b>Libre</b> by inserting them into the machine.")
 
 /obj/machinery/autobank/attackby(obj/item/weapon, mob/user, params)
 	var/value = 0
@@ -151,7 +151,7 @@
 	name = "banking terminal parts kit"
 	icon = 'modular_doppler/dopple_cash/icons/atm.dmi'
 	icon_state = "flatpacked_atm"
-	//type_to_deploy = /obj/machinery/autobank
+	type_to_deploy = /obj/machinery/autobank
 	deploy_time = 2 SECONDS
 	custom_materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
@@ -167,7 +167,7 @@
 	circuit = null
 	anchored = TRUE
 	density = FALSE
-	var/repacked_type = /obj/item/wallframe/frontier_medstation
+	var/repacked_type = /obj/item/wallframe/atm_wallmount
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/autobank/wallmount, 29)
 
