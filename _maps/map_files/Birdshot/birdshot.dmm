@@ -18962,6 +18962,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/autobank/wallmount/directional/east,
 /turf/open/floor/wood/tile,
 /area/station/service/bar)
 "gGy" = (
@@ -32944,7 +32945,7 @@
 /turf/open/floor/iron/smooth,
 /area/station/maintenance/solars/port/aft)
 "lbe" = (
-/obj/structure/sign/poster/official/random/directional/north,
+/obj/machinery/autobank/wallmount/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/cargo/lobby)
 "lbG" = (
@@ -37194,6 +37195,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/autobank/wallmount/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "mss" = (
@@ -57519,6 +57521,7 @@
 	},
 /obj/effect/turf_decal/delivery,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/autobank/wallmount/directional/east,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "tje" = (
@@ -70038,6 +70041,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/disposal/incinerator)
+"wWp" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/autobank/wallmount/directional/south,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/recreation)
 "wWs" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -114425,7 +114435,7 @@ baO
 pzd
 gMz
 rem
-rQA
+wWp
 shD
 xbg
 rOK

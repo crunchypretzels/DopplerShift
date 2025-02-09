@@ -5906,6 +5906,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
+/obj/machinery/autobank,
 /turf/open/floor/iron/checker,
 /area/station/commons/lounge)
 "aTY" = (
@@ -15466,6 +15467,11 @@
 	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
+"epe" = (
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/machinery/autobank/wallmount/directional/south,
+/turf/open/floor/iron,
+/area/station/commons/fitness)
 "epB" = (
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
 	dir = 1
@@ -42334,6 +42340,13 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/grass,
 /area/station/hallway/primary/tram/center)
+"nTq" = (
+/obj/effect/turf_decal/trimline/neutral/filled/line{
+	dir = 8
+	},
+/obj/machinery/autobank/wallmount/directional/west,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/service)
 "nTr" = (
 /obj/structure/table/wood,
 /obj/structure/window/reinforced/spawner/directional/west{
@@ -42767,6 +42780,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/carpet,
 /area/station/commons/dorms)
+"oat" = (
+/obj/effect/turf_decal/trimline/neutral/filled/line{
+	dir = 4
+	},
+/obj/machinery/autobank,
+/turf/open/floor/iron,
+/area/station/hallway/secondary/exit/departure_lounge)
 "oaB" = (
 /obj/effect/turf_decal/trimline/brown/filled/corner{
 	dir = 4
@@ -52682,6 +52702,16 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
+"rFh" = (
+/obj/effect/turf_decal/trimline/neutral/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/thinplating{
+	dir = 4
+	},
+/obj/machinery/autobank/wallmount/directional/west,
+/turf/open/floor/iron,
+/area/station/commons/fitness/recreation)
 "rGj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/cafeteria,
@@ -59568,6 +59598,16 @@
 /obj/item/clothing/glasses/meson,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
+"tZv" = (
+/obj/effect/turf_decal/trimline/blue/filled/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/neutral/filled/warning{
+	dir = 4
+	},
+/obj/machinery/autobank/wallmount/directional/east,
+/turf/open/floor/iron,
+/area/station/hallway/primary/tram/center)
 "tZM" = (
 /obj/effect/turf_decal/tile/neutral/tram,
 /obj/effect/spawner/random{
@@ -70527,6 +70567,16 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/station/science/genetics)
+"xTF" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/neutral/filled/warning{
+	dir = 1
+	},
+/obj/machinery/autobank/wallmount/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/tram/right)
 "xTM" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/nitrogen_output{
 	dir = 1
@@ -88698,7 +88748,7 @@ xhL
 aXo
 xhL
 dzF
-xhL
+epe
 apC
 apC
 abM
@@ -104843,7 +104893,7 @@ njl
 sbx
 aMv
 sbx
-sbx
+nTq
 sbx
 sbx
 jra
@@ -156787,7 +156837,7 @@ uZs
 ica
 uZs
 uZs
-uZs
+rFh
 qdG
 vEv
 feZ
@@ -167830,7 +167880,7 @@ qvf
 izU
 uCl
 lRC
-ofT
+tZv
 ofT
 uvI
 eSz
@@ -181697,7 +181747,7 @@ gNc
 ged
 whL
 bMb
-rEB
+xTF
 oPw
 rlZ
 brm
@@ -189926,7 +189976,7 @@ uCy
 pFH
 gTN
 eAk
-gTN
+oat
 tgP
 gTN
 oXC

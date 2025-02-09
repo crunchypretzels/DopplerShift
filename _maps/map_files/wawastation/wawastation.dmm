@@ -9054,6 +9054,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 9
 	},
+/obj/machinery/autobank/wallmount/directional/north,
 /turf/open/floor/iron,
 /area/station/engineering/lobby)
 "dmx" = (
@@ -12349,6 +12350,13 @@
 /obj/machinery/light/directional/north,
 /turf/open/openspace,
 /area/station/science/xenobiology)
+"erU" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/autobank/wallmount/directional/south,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "erX" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
@@ -15220,7 +15228,7 @@
 /turf/open/floor/iron,
 /area/station/service/hydroponics/garden)
 "fvk" = (
-/obj/structure/sign/poster/random/directional/west,
+/obj/machinery/autobank/wallmount/directional/west,
 /obj/machinery/camera/autoname/directional/west,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
@@ -25849,6 +25857,7 @@
 "jjN" = (
 /obj/effect/turf_decal/tile/red/half/contrasted,
 /obj/machinery/camera/autoname/directional/south,
+/obj/machinery/autobank/wallmount/directional/south,
 /turf/open/floor/iron,
 /area/station/hallway/primary/fore)
 "jjO" = (
@@ -32223,6 +32232,12 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating,
 /area/station/maintenance/department/engine)
+"lrm" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/machinery/camera/autoname/directional/east,
+/obj/machinery/autobank/wallmount/directional/east,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "lrr" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
@@ -32558,6 +32573,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/textured,
 /area/station/construction/mining/aux_base)
+"lyl" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/machinery/autobank/wallmount/directional/north,
+/turf/open/floor/plating,
+/area/station/maintenance/central/greater)
 "lyr" = (
 /obj/structure/table/reinforced/rglass,
 /obj/effect/turf_decal/tile/blue/fourcorners,
@@ -49560,6 +49580,7 @@
 /obj/machinery/camera/autoname/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/autobank/wallmount/directional/south,
 /turf/open/floor/wood/tile,
 /area/station/service/bar)
 "rzg" = (
@@ -89361,7 +89382,7 @@ xPL
 ouo
 xRH
 aly
-hvT
+erU
 kAg
 ckn
 wnj
@@ -102716,7 +102737,7 @@ azv
 azv
 jqz
 dmx
-xoQ
+lrm
 aQS
 aQS
 aQS
@@ -159758,7 +159779,7 @@ gYW
 hCT
 ttL
 gYW
-dTe
+lyl
 tXp
 kDJ
 fne

@@ -32123,6 +32123,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/maintenance/aft/greater)
+"jgS" = (
+/obj/effect/turf_decal/tile/yellow{
+	dir = 8
+	},
+/obj/machinery/autobank/wallmount/directional/west,
+/turf/open/floor/iron,
+/area/station/hallway/primary/aft)
 "jgV" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/dark,
@@ -48369,9 +48376,7 @@
 /area/station/medical/cryo)
 "nOj" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/structure/noticeboard/staff{
-	pixel_y = 36
-	},
+/obj/machinery/autobank/wallmount/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "nOl" = (
@@ -53533,6 +53538,10 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/white,
 /area/station/medical/treatment_center)
+"pip" = (
+/obj/machinery/autobank/wallmount/directional/south,
+/turf/open/floor/iron,
+/area/station/hallway/primary/port)
 "piv" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -55027,6 +55036,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/mine/laborcamp)
+"pDJ" = (
+/obj/effect/landmark/start/hangover,
+/obj/machinery/autobank/wallmount/directional/east,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "pDL" = (
 /obj/structure/sign/departments/psychology/directional/south,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -64717,6 +64731,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/machinery/autobank/wallmount/directional/south,
 /turf/open/floor/iron,
 /area/station/commons/fitness)
 "spz" = (
@@ -232540,7 +232555,7 @@ wtr
 oCO
 kxs
 lsi
-gpp
+pip
 qnj
 qnj
 qnj
@@ -241039,7 +241054,7 @@ jOy
 ljp
 gHe
 sni
-bep
+pDJ
 qrJ
 uLC
 xzh
@@ -244660,7 +244675,7 @@ pvg
 nQW
 vsz
 fdy
-fdy
+jgS
 wHX
 nbi
 qzu

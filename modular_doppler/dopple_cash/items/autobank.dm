@@ -9,6 +9,8 @@
 	anchored = TRUE
 	density = TRUE
 	idle_power_usage = BASE_MACHINE_IDLE_CONSUMPTION
+	light_power = 0.7
+	light_range = MINIMUM_USEFUL_LIGHT_RANGE
 	// current user's bank card
 	var/obj/item/card/id/inserted_scan_id
 	// currently loaded bank account
