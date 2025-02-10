@@ -11,7 +11,7 @@
 #define SPIN_TIME 65 //As always, deciseconds.
 #define REEL_DEACTIVATE_DELAY 7
 #define JACKPOT_SEVENS FA_ICON_7
-#define CASH 1 // DOPPLER EDIT: previously HOLOCHIP. replaced with cash in the great fuckup; far from modular.
+#define CASH 1 // DOPPLER EDIT: value previously 'HOLOCHIP'
 #define COIN 2
 
 /obj/machinery/computer/slot_machine
@@ -30,7 +30,7 @@
 	var/working = FALSE
 	var/balance = 0 //How much money is in the machine, ready to be CONSUMED.
 	var/jackpots = 0
-	var/paymode = CASH // DOPPLER EDIT: toggles between CASH/COIN, defined above
+	var/paymode = CASH // DOPPLER EDIT: toggles between CASH/COIN; cash by default
 	var/cointype = /obj/item/coin/iron //default cointype
 	/// Icons that can be displayed by the slot machine.
 	var/static/list/icons = list(
@@ -114,10 +114,10 @@
 				qdel(inserted_coin)
 				return ITEM_INTERACT_SUCCESS
 		else
-			balloon_alert(user, "cash only!") // DOPPLER EDIT
+			balloon_alert(user, "cash only!") // DOPPLER EDIT: if we're set to use cash, demand cash
 		return ITEM_INTERACT_BLOCKING
 
-	if(istype(inserted, /obj/item/libre/bundle))
+	if(istype(inserted, /obj/item/libre/bundle)) // DOPPLER EDIT BEGINS HERE: libre is cash, for all intents and purposes
 		if(paymode == CASH)
 			var/obj/item/libre/bundle/inserted_cash = inserted
 			if(!user.temporarilyRemoveItemFromInventory(inserted_cash))
@@ -137,12 +137,12 @@
 		visible_message("<b>[src]</b> says, 'ERROR! Please empty the machine balance before altering paymode'") //Prevents converting coins into holocredits and vice versa
 		return ITEM_INTERACT_BLOCKING
 
-	if(paymode == CASH) // DOPPLER EDIT: yeah, I thought this was weird too
+	if(paymode == CASH) // DOPPLER EDIT : despite my earlier comments, I don't actually know what this line does.
 		paymode = COIN
 		balloon_alert(user, "now using material coins")
 	else
 		paymode = CASH
-		balloon_alert(user, "now using Libres") // END DOPPLER EDIT (for now)
+		balloon_alert(user, "now using Libre") // DOPPLER EDIT: holochips > libre
 	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/computer/slot_machine/emag_act(mob/user, obj/item/card/emag/emag_card)
@@ -306,11 +306,11 @@
 
 	else if(check_jackpot(JACKPOT_SEVENS))
 		var/prize = money + JACKPOT
-		visible_message("<b>[src]</b> says, 'JACKPOT! You win [prize] Libres!'")
+		visible_message("<b>[src]</b> says, 'JACKPOT! You win [prize] Libres!'") // DOPPLER EDIT: credits > libre
 		priority_announce("Congratulations to [user ? user.real_name : usrname] for winning the jackpot at the slot machine in [get_area(src)]!")
 		jackpots += 1
 		money = 0
-		if(paymode == CASH) // DOPPLER EDIT
+		if(paymode == CASH) // DOPPLER EDIT: payout in cash
 			new /obj/item/libre/bundle(loc, prize)
 		else
 			for(var/i in 1 to 5)
@@ -321,11 +321,11 @@
 				sleep(REEL_DEACTIVATE_DELAY)
 
 	else if(linelength == 5)
-		visible_message("<b>[src]</b> says, 'Big Winner! You win a thousand Libres!'")
+		visible_message("<b>[src]</b> says, 'Big Winner! You win a thousand Libre!'") // DOPPLER EDIT: credits > libre
 		give_money(BIG_PRIZE)
 
 	else if(linelength == 4)
-		visible_message("<b>[src]</b> says, 'Winner! You win four hundred Libres!'")
+		visible_message("<b>[src]</b> says, 'Winner! You win four hundred Libre!'") // DOPPLER EDIT: credits > libre
 		give_money(SMALL_PRIZE)
 
 	else if(linelength == 3)
