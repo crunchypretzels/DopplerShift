@@ -5,8 +5,8 @@ import {
   NumberInput,
   Section,
 } from 'tgui-core/components';
-import { useBackend } from '../backend';
 import { formatMoney } from 'tgui-core/format';
+import { useBackend } from '../backend';
 import { Window } from '../layouts';
 
 type Data = {
