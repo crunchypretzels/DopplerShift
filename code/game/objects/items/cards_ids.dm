@@ -639,7 +639,7 @@
 	var/physical_currency
 	if(istype(money, /obj/item/stack/spacecash) || istype(money, /obj/item/coin))
 		physical_currency = TRUE
-	if(!registered_account)
+	if(!registered_account(LINE 642)
 		to_chat(user, span_warning("[src] doesn't have a linked account to deposit [money] into!"))
 		return FALSE
 	var/cash_money = money.get_item_credit_value()
@@ -666,7 +666,7 @@
  * user - The user inserting the items.
  */
 /obj/item/card/id/proc/mass_insert_money(list/money, mob/user)
- 	if(!registered_account)
+	if(!registered_account(LINE 669))
 		to_chat(user, span_warning("[src] doesn't have a linked account to deposit into!"))
 		return FALSE
 
