@@ -1,4 +1,3 @@
-import { useBackend } from '../backend';
 import {
   AnimatedNumber,
   LabeledList,
@@ -6,6 +5,7 @@ import {
   NumberInput,
   Section,
 } from 'tgui-core/components';
+import { useBackend } from '../backend';
 import { formatMoney } from 'tgui-core/format';
 import { Window } from '../layouts';
 
