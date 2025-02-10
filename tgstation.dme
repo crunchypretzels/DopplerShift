@@ -7372,6 +7372,4 @@
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_machine.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_reward.dm"
 #include "modular_doppler\xenoarch\code\modules\research\xenoarch\xenoarch_tool.dm"
-#include "modular_doppler\dopple_cash\items\autobank.dm"
-#include "modular_doppler\dopple_cash\items\dopplecash.dm"
 // END_INCLUDE
