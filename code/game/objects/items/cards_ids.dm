@@ -639,7 +639,6 @@
 	var/physical_currency
 	if(istype(money, /obj/item/stack/spacecash) || istype(money, /obj/item/coin))
 		physical_currency = TRUE
-
 	if(!registered_account)
 		to_chat(user, span_warning("[src] doesn't have a linked account to deposit [money] into!"))
 		return FALSE
