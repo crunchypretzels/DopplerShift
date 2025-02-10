@@ -666,8 +666,8 @@
  * money - List of items to attempt to convert to credits and insert into the card.
  * user - The user inserting the items.
  */
- /obj/item/card/id/proc/mass_insert_money(list/money, mob/user)
-	if(!registered_account)
+/obj/item/card/id/proc/mass_insert_money(list/money, mob/user)
+ 	if(!registered_account)
 		to_chat(user, span_warning("[src] doesn't have a linked account to deposit into!"))
 		return FALSE
 
