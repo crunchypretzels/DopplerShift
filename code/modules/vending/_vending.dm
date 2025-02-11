@@ -563,7 +563,7 @@ GLOBAL_LIST_EMPTY(vending_machines_to_restock)
 	to_chat(user, span_notice("You loaded [restocked] items in [src][credits_contained > 0 ? ", and are rewarded [credits_contained] libre." : "."]")) // DOPPLER EDIT BEGIN: cashtype
 	var/datum/bank_account/cargo_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	cargo_account.adjust_money(round(credits_contained * 0.5), "Vending: Restock")
-	spawn_libre(src, credits_contained) // DOPPLER EDIT END
+	spawn_libre(credits_contained, src) // DOPPLER EDIT END
 //	try_put_in_hand(payday, user)
 	credits_contained = 0
 

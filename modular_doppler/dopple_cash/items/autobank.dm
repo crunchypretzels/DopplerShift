@@ -34,6 +34,13 @@
 
 	. += span_notice("Most <b>outdated or non-standard galactic currencies</b> can be converted into <b>Libre</b> by inserting them into the machine.")
 
+/obj/machinery/autobank/update_appearance(updates=ALL)
+	. = ..()
+	if(machine_stat & (NOPOWER|BROKEN))
+		set_light(0)
+		return
+	set_light(1.5, 0.7, "#d6c631") // golden light
+
 /obj/machinery/autobank/attackby(obj/item/weapon, mob/user, params)
 	var/value = 0
 	if(isidcard(weapon))
