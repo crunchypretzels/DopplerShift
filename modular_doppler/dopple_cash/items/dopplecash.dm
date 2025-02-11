@@ -28,6 +28,9 @@
 	value += amount
 	update_appearance()
 
+/obj/item/libre/get_item_credit_value()
+	return (value)
+
 /obj/item/libre/proc/transfer_value(amount, obj/item/libre/target)
 	amount = clamp(amount, 0, value)
 	value -= amount
