@@ -25585,7 +25585,6 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/autobank/wallmount/directional/west,
 /turf/open/floor/iron,
 /area/station/construction/storage_wing)
 "jfn" = (
@@ -27773,8 +27772,6 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/obj/machinery/autobank,
-/obj/effect/turf_decal/bot,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "jPE" = (
@@ -41636,16 +41633,6 @@
 /obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/medical/chemistry)
-"oNz" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/machinery/autobank/wallmount/directional/west,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "oNP" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -42953,7 +42940,6 @@
 /obj/machinery/light/small/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/autobank,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
 "pmZ" = (
@@ -67583,12 +67569,6 @@
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/engineering/supermatter/room)
-"xKv" = (
-/obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/neutral,
-/obj/machinery/autobank/wallmount/directional/east,
-/turf/open/floor/iron,
-/area/station/commons/dorms)
 "xKK" = (
 /turf/closed/wall,
 /area/station/science/research)
@@ -85381,7 +85361,7 @@ fcq
 jPE
 auh
 crr
-oNz
+crr
 crr
 qer
 crr
@@ -104634,7 +104614,7 @@ ngO
 wGR
 qEy
 aAg
-xKv
+aAg
 uKx
 kWd
 txk

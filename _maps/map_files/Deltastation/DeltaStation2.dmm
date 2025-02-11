@@ -8813,16 +8813,6 @@
 	icon_state = "foam_plating"
 	},
 /area/station/maintenance/department/science/xenobiology)
-"cfo" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/machinery/autobank/wallmount/directional/north,
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
 "cfp" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/rubbershot{
@@ -21208,7 +21198,7 @@
 /obj/structure/railing{
 	dir = 5
 	},
-/obj/machinery/autobank,
+/obj/item/kirbyplants/random,
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
 	dir = 4
@@ -26143,7 +26133,6 @@
 	name = "hallway camera"
 	},
 /obj/effect/turf_decal/tile/neutral,
-/obj/machinery/autobank/wallmount/directional/east,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central/aft)
 "guq" = (
@@ -41863,13 +41852,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/command/heads_quarters/qm)
-"krr" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/autobank/wallmount/directional/south,
-/turf/open/floor/iron,
-/area/station/hallway/primary/port)
 "krs" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -42065,7 +42047,7 @@
 /turf/open/space/basic,
 /area/station/solars/port/aft)
 "kur" = (
-/obj/machinery/autobank,
+/obj/item/kirbyplants/random,
 /obj/machinery/light/directional/south,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -127678,7 +127660,7 @@ tjp
 dGS
 rRr
 uED
-krr
+nXK
 vcB
 ltt
 hRs
@@ -142839,7 +142821,7 @@ mjz
 bdC
 jFh
 lSz
-cfo
+wnQ
 ljd
 rdP
 iVq
