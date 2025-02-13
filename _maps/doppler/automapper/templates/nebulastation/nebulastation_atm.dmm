@@ -3,17 +3,13 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 10
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window{
-	dir = 4
-	},
 /obj/machinery/autobank/wallmount/directional/west,
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
 	},
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/machinery/door/window/right/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/commons/dorms)
 "d" = (
@@ -26,17 +22,13 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 9
 	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window{
-	dir = 4
-	},
 /obj/machinery/autobank/wallmount/directional/west,
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
 	},
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/machinery/door/window/left/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/commons/dorms)
 "M" = (

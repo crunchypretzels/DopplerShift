@@ -6,13 +6,9 @@
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
 	},
-/obj/machinery/door/window{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /obj/machinery/autobank/wallmount/directional/west,
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/machinery/door/window/right/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/primary/central)
 "q" = (
@@ -55,11 +51,9 @@
 /obj/effect/turf_decal/loading_area/white{
 	dir = 8
 	},
-/obj/machinery/door/window{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
 /obj/machinery/autobank/wallmount/directional/west,
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/machinery/door/window/left/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/primary/central)
 

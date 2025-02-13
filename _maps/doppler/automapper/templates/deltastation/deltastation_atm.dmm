@@ -24,14 +24,12 @@
 /turf/open/floor/iron/dark/small,
 /area/station/maintenance/department/crew_quarters/bar)
 "q" = (
-/obj/machinery/door/window,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/autobank/wallmount/directional/north,
 /obj/effect/turf_decal/loading_area/white{
 	dir = 1
 	},
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/machinery/door/window/left/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/maintenance/department/crew_quarters/bar)
 "w" = (
@@ -56,17 +54,13 @@
 /turf/open/floor/iron,
 /area/station/maintenance/department/crew_quarters/bar)
 "B" = (
-/obj/machinery/door/window,
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
 /obj/machinery/autobank/wallmount/directional/north,
 /obj/effect/turf_decal/loading_area/white{
 	dir = 1
 	},
+/obj/structure/window/reinforced/spawner/directional/east,
+/obj/structure/window/reinforced/spawner/directional/west,
+/obj/machinery/door/window/right/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/maintenance/department/crew_quarters/bar)
 "F" = (

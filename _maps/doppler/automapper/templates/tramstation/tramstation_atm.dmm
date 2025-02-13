@@ -11,13 +11,11 @@
 	dir = 5
 	},
 /obj/machinery/autobank/wallmount/directional/east,
-/obj/structure/window/reinforced,
-/obj/machinery/door/window{
-	dir = 8
-	},
 /obj/effect/turf_decal/loading_area/white{
 	dir = 4
 	},
+/obj/structure/window/reinforced/spawner/directional/south,
+/obj/machinery/door/window/right/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/secondary/exit)
 "x" = (
@@ -25,15 +23,11 @@
 	dir = 6
 	},
 /obj/machinery/autobank/wallmount/directional/east,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/window{
-	dir = 8
-	},
 /obj/effect/turf_decal/loading_area/white{
 	dir = 4
 	},
+/obj/structure/window/reinforced/spawner/directional/north,
+/obj/machinery/door/window/left/directional/west,
 /turf/open/floor/iron/dark/smooth_large,
 /area/station/hallway/secondary/exit)
 "G" = (
