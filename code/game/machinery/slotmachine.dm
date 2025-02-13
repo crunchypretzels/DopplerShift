@@ -137,7 +137,7 @@
 		visible_message("<b>[src]</b> says, 'ERROR! Please empty the machine balance before altering paymode'") //Prevents converting coins into holocredits and vice versa
 		return ITEM_INTERACT_BLOCKING
 
-	if(paymode == CASH) // DOPPLER EDIT : despite my earlier comments, I don't actually know what this line does.
+	if(paymode == CASH) // DOPPLER EDIT : HOLOCHIP > cash
 		paymode = COIN
 		balloon_alert(user, "now using material coins")
 	else
@@ -306,7 +306,7 @@
 
 	else if(check_jackpot(JACKPOT_SEVENS))
 		var/prize = money + JACKPOT
-		visible_message("<b>[src]</b> says, 'JACKPOT! You win [prize] Libres!'") // DOPPLER EDIT: credits > libre
+		visible_message("<b>[src]</b> says, 'JACKPOT! You win [prize] Libre!'") // DOPPLER EDIT: credits > libre
 		priority_announce("Congratulations to [user ? user.real_name : usrname] for winning the jackpot at the slot machine in [get_area(src)]!")
 		jackpots += 1
 		money = 0
@@ -395,11 +395,11 @@
 /// Dispense the given amount. If machine is set to use coins, will use the specified coin type.
 /// If throwit and target are set, will launch the payment at the target
 /obj/machinery/computer/slot_machine/proc/dispense(amount = 0, cointype = /obj/item/coin/silver, throwit = FALSE, mob/living/target)
-	if(paymode == CASH)
-		var/obj/item/libre/bundle/payload = new /obj/item/libre/bundle(loc,amount)
+	if(paymode == CASH) // DOPPLER EDIT: holochips > cash
+		var/obj/item/libre/bundle/payload = new /obj/item/libre/bundle(loc,amount) // DOPPLER EDIT: holochips > cash
 
 		if(throwit && target)
-			payload.throw_at(target, 3, 10)
+			payload.throw_at(target, 3, 10) // DOPPLER EDIT: from 'chip' to 'payload'
 	else
 		var/value = coinvalues["[cointype]"]
 		if(value <= 0)
