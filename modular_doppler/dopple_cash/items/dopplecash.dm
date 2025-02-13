@@ -105,12 +105,12 @@
 	if(coins_only)
 		if(value == 1)
 			name = "one libre coin"
-			desc = "With this, we could build a new Heaven."
+			desc = "Rich men have dreams. Poor men die to make them come true."
 			drop_sound = 'modular_doppler/dopple_cash/sounds/coin_drop.ogg'
 			pickup_sound =  'modular_doppler/dopple_cash/sounds/coin_pickup.ogg'
 		else
 			name = "[value] libre"
-			desc = "The weight of the world by the palmful."
+			desc = "I wouldn't wager it on blackjack."
 			drop_sound = 'modular_doppler/dopple_cash/sounds/coin_drop.ogg'
 			pickup_sound =  'modular_doppler/dopple_cash/sounds/coin_pickup.ogg'
 	else
