@@ -39,7 +39,7 @@ trait_name = "Station"
 [templates.deltastation_atm]
 map_files = ["deltastation_atm.dmm"]
 directory = "_maps/doppler/automapper/templates/deltastation/"
-required_map = "birdshot.dmm"
+required_map = "DeltaStation2.dmm"
 coordinates = [150, 153, 1]
 trait_name = "Station"
 
