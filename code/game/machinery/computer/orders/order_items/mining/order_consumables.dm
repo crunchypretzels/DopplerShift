@@ -43,8 +43,9 @@
 	cost_per_order = 600
 
 /datum/orderable_item/consumables/space_cash // DOPPLER EDIT: money type
+	name = "1000 Libre"
 	purchase_path = /obj/item/libre/bundle/c1000
-	desc = "A freshly-translocated 1000 libre bill."
+	desc = "A freshly-translocated 1000 libre bill." // END DOPPLER EDIT: money type
 	cost_per_order = 2000
 
 /datum/orderable_item/consumables/rescue_hook
