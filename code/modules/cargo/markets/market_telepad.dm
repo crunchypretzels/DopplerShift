@@ -192,7 +192,7 @@
 		return
 
 	if(creds_value < restock_cost)
-		say("Insufficient credits!")
+		say("Insufficient libre!") // DOPPLER EDIT: credits > libre
 		playsound(src, 'sound/machines/buzz/buzz-sigh.ogg', 40, FALSE)
 		return ITEM_INTERACT_BLOCKING
 

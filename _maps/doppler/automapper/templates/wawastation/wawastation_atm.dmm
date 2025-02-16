@@ -56,6 +56,12 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/dark/small,
 /area/station/maintenance/department/cargo)
+"H" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/light/cold/directional/west,
+/turf/open/floor/iron/dark/small,
+/area/station/maintenance/department/cargo)
 "P" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -69,7 +75,7 @@
 
 (1,1,1) = {"
 P
-C
+H
 e
 a
 "}

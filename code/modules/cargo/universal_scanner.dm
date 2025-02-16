@@ -231,7 +231,7 @@
 				cube.AddComponent(/datum/component/pricetag, scanner_account, cube.handler_tip, FALSE)
 
 				cube.bounty_handler_account = scanner_account
-				cube.bounty_handler_account.bank_card_talk("Bank account for [price ? "<b>[price * cube.handler_tip]</b> credit " : ""]handling tip successfully registered.")
+				cube.bounty_handler_account.bank_card_talk("Bank account for [price ? "<b>[price * cube.handler_tip]</b> libre " : ""]handling tip successfully registered.") // DOPPLER EDIT: credits > libre
 
 				if(cube.bounty_holder_account != cube.bounty_handler_account) //No need to send a tracking update to the person scanning it
 					cube.bounty_holder_account.bank_card_talk("<b>[cube]</b> was scanned in \the <b>[get_area(cube)]</b> by <b>[scan_human] ([scan_human.job])</b>.")
